@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class PlayerPickUp : MonoBehaviour
 {
+    [Header("References")]
+    private PlayerUpgradeHandler upgradeHandler;
+
     [Header("Data")]
     [SerializeField] private int legosPickedUp;
     [SerializeField] private LayerMask obstacleLayer;
 
+    [Header("Shooting Data")]
+    [SerializeField] private Transform muzzlePoint;
+    [SerializeField] private GameObject bulletObj;
+
     private void Start()
     {
+        upgradeHandler = GetComponent<PlayerUpgradeHandler>();
+
         legosPickedUp = 0;
     }
 
@@ -25,21 +34,24 @@ public class PlayerPickUp : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 10f))
         {
-            //start shooting
-            print("start shooting");
+            //Shoot();
         }
+    }
+
+    private void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletObj, transform.position, Quaternion.identity) as GameObject;
+        bullet.GetComponent<Rigidbody>().AddForce(10 * Time.deltaTime * transform.forward);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Lego"))
         {
+            Destroy(collision.gameObject);
+
             legosPickedUp++;
-            if (legosPickedUp == 4)
-            {
-                //upgrade gun
-                legosPickedUp = 0;
-            }
+            upgradeHandler.currentWeapon++;
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {

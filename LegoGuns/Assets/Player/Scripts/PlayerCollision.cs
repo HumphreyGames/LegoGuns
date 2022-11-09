@@ -18,7 +18,6 @@ public class PlayerCollision : MonoBehaviour
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
             //GAME OVER
-            print("game over");
         }
     }
 }

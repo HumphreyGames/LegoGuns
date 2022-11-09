@@ -8,7 +8,7 @@ public class PlayerPickUp : MonoBehaviour
     private PlayerUpgradeHandler upgradeHandler;
 
     [Header("Data")]
-    [SerializeField] private int legosPickedUp;
+    public int legosPickedUp;
     [SerializeField] private LayerMask obstacleLayer;
 
     [Header("Shooting Data")]
@@ -51,7 +51,6 @@ public class PlayerPickUp : MonoBehaviour
             Destroy(collision.gameObject);
 
             legosPickedUp++;
-            upgradeHandler.currentWeapon++;
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {

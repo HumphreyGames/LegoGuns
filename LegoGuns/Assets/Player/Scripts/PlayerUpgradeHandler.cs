@@ -11,11 +11,14 @@ public class PlayerUpgradeHandler : MonoBehaviour
     {
         currentWeapon = 0;
 
-        weapons[currentWeapon].SetActive(true);
+        weapons[currentWeapon].GetComponent<MeshRenderer>().enabled = true;
+        weapons[currentWeapon].GetComponent<BoxCollider>().enabled = true;
     }
 
     private void Update()
     {
-        weapons[currentWeapon].SetActive(true);
+        currentWeapon = GetComponent<PlayerPickUp>().legosPickedUp;
+        weapons[currentWeapon].GetComponent<MeshRenderer>().enabled = true;
+        weapons[currentWeapon].GetComponent<BoxCollider>().enabled = true;
     }
 }

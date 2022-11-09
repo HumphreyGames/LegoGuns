@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lego
   - Obstacle
+  - Choice
   layers:
   - Default
   - TransparentFX

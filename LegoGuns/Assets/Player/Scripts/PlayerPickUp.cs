@@ -40,8 +40,11 @@ public class PlayerPickUp : MonoBehaviour
         Ray ray = new Ray(muzzlePoint.position, -muzzlePoint.forward);
         if (Physics.Raycast(ray, out hit, 5f) && fireCountdown <= 0)
         {
-            Shoot();
-            fireCountdown = 1f / fireRate;
+            if (hit.transform.gameObject.CompareTag("Obstacle"))
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
         }
         fireCountdown -= Time.deltaTime;
     }

@@ -20,4 +20,18 @@ public class PlayerCollision : MonoBehaviour
             //GAME OVER
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Choice"))
+        {
+            PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
+            PlayerUpgradeHandler upgradeHandler = FindObjectOfType<PlayerUpgradeHandler>();
+            Choice choiceScript = other.gameObject.GetComponent<Choice>();
+
+            pickUpScript.legosPickedUp += choiceScript.value;
+            upgradeHandler.UpgradeWeapon(choiceScript.value);
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
+        }
+    }
 }

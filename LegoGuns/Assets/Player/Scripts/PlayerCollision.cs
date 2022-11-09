@@ -8,10 +8,13 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Lego"))
         {
-            collision.gameObject.SetActive(false);
+            print("collided");
+            Destroy(collision.gameObject);
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
+            PlayerUpgradeHandler upgradeHandler = FindObjectOfType<PlayerUpgradeHandler>();
+
             pickUpScript.legosPickedUp++;
-            FindObjectOfType<PlayerUpgradeHandler>().UpgradeWeapon(pickUpScript.legosPickedUp);
+            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {

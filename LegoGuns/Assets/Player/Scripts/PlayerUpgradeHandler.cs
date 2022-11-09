@@ -5,20 +5,19 @@ using UnityEngine;
 public class PlayerUpgradeHandler : MonoBehaviour
 {
     public GameObject[] weapons;
-    public int currentWeapon;
 
-    private void Start()
+    public void UpgradeWeapon(int currentWeapon)
     {
-        currentWeapon = 0;
-
-        weapons[currentWeapon].GetComponent<MeshRenderer>().enabled = true;
-        weapons[currentWeapon].GetComponent<BoxCollider>().enabled = true;
-    }
-
-    private void Update()
-    {
-        currentWeapon = GetComponent<PlayerPickUp>().legosPickedUp;
-        weapons[currentWeapon].GetComponent<MeshRenderer>().enabled = true;
-        weapons[currentWeapon].GetComponent<BoxCollider>().enabled = true;
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            if (i == currentWeapon)
+            {
+                weapons[i].SetActive(true);
+            }
+            else
+            {
+                weapons[i].SetActive(false);
+            }
+        }
     }
 }

@@ -777,7 +777,6 @@ GameObject:
   - component: {fileID: 1030663038}
   - component: {fileID: 1030663043}
   - component: {fileID: 1030663042}
-  - component: {fileID: 1030663045}
   - component: {fileID: 1030663044}
   m_Layer: 0
   m_Name: Player
@@ -903,33 +902,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030663037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712df042f42e2ae4d889f18ac4233c92, type: 3}
+  m_Script: {fileID: 11500000, guid: df66bd98d89513442ad6538be82c1474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 1030663037}
-  - {fileID: 1638932530}
-  - {fileID: 1154933828}
-  currentWeapon: 0
---- !u!114 &1030663045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030663037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legosPickedUp: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  muzzlePoint: {fileID: 428993795}
-  bulletObj: {fileID: 1562866318610460213, guid: b65d5df329782aa4f93b76cd4eac9ee2,
-    type: 3}
 --- !u!1 &1045255561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,8 +1132,6 @@ GameObject:
   - component: {fileID: 1154933834}
   - component: {fileID: 1154933833}
   - component: {fileID: 1154933832}
-  - component: {fileID: 1154933831}
-  - component: {fileID: 1154933838}
   - component: {fileID: 1154933837}
   m_Layer: 0
   m_Name: Player (2)
@@ -1182,25 +1155,6 @@ Transform:
   m_Father: {fileID: 1918103211}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1154933831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154933828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legosPickedUp: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  muzzlePoint: {fileID: 428993795}
-  bulletObj: {fileID: 1562866318610460213, guid: b65d5df329782aa4f93b76cd4eac9ee2,
-    type: 3}
 --- !u!114 &1154933832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,32 +1257,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1154933828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712df042f42e2ae4d889f18ac4233c92, type: 3}
+  m_Script: {fileID: 11500000, guid: df66bd98d89513442ad6538be82c1474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 1030663037}
-  - {fileID: 1638932530}
-  - {fileID: 1154933828}
-  currentWeapon: 0
---- !u!114 &1154933838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154933828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legosPickedUp: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  muzzlePoint: {fileID: 0}
-  bulletObj: {fileID: 0}
 --- !u!1 &1467086622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,8 +1388,6 @@ GameObject:
   - component: {fileID: 1638932536}
   - component: {fileID: 1638932535}
   - component: {fileID: 1638932534}
-  - component: {fileID: 1638932533}
-  - component: {fileID: 1638932540}
   - component: {fileID: 1638932539}
   m_Layer: 0
   m_Name: Player (1)
@@ -1482,25 +1411,6 @@ Transform:
   m_Father: {fileID: 1918103211}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1638932533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638932530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legosPickedUp: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  muzzlePoint: {fileID: 428993795}
-  bulletObj: {fileID: 1562866318610460213, guid: b65d5df329782aa4f93b76cd4eac9ee2,
-    type: 3}
 --- !u!114 &1638932534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,32 +1513,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1638932530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712df042f42e2ae4d889f18ac4233c92, type: 3}
+  m_Script: {fileID: 11500000, guid: df66bd98d89513442ad6538be82c1474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 1030663037}
-  - {fileID: 1638932530}
-  - {fileID: 1154933828}
-  currentWeapon: 0
---- !u!114 &1638932540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638932530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legosPickedUp: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  muzzlePoint: {fileID: 0}
-  bulletObj: {fileID: 0}
 --- !u!1 &1918103210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1525,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1918103211}
+  - component: {fileID: 1918103212}
+  - component: {fileID: 1918103213}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -1664,3 +1553,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1918103212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918103210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712df042f42e2ae4d889f18ac4233c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1030663037}
+  - {fileID: 1638932530}
+  - {fileID: 1154933828}
+--- !u!114 &1918103213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918103210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d6d01abbca6a43a9f9c9f85815993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legosPickedUp: 0
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  muzzlePoint: {fileID: 428993795}
+  bulletObj: {fileID: 1562866318610460213, guid: b65d5df329782aa4f93b76cd4eac9ee2,
+    type: 3}

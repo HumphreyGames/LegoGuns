@@ -43,19 +43,4 @@ public class PlayerPickUp : MonoBehaviour
         GameObject bullet = Instantiate(bulletObj, transform.position, Quaternion.identity) as GameObject;
         bullet.GetComponent<Rigidbody>().AddForce(10 * Time.deltaTime * transform.forward);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Lego"))
-        {
-            Destroy(collision.gameObject);
-
-            legosPickedUp++;
-        }
-        else if (collision.gameObject.CompareTag("Obstacle"))
-        {
-            //GAME OVER
-            print("game over");
-        }
-    }
 }

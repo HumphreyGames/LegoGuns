@@ -17,7 +17,8 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
-            //GAME OVER
+            PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
+            pickUpScript.legosPickedUp--;
         }
     }
 

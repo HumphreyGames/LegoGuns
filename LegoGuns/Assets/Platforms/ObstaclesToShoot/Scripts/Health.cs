@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int currentHealth;
+    public int currentHealth;
 
     private void Start()
     {
@@ -19,6 +19,8 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+
+        GetComponent<Animator>().SetTrigger("Hit");
     }
 
     private void Die()

@@ -18,7 +18,8 @@ public class PlayerCollision : MonoBehaviour
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
-            pickUpScript.legosPickedUp--;
+            Health obstacleHealth = collision.gameObject.GetComponent<Health>();
+            pickUpScript.legosPickedUp -= obstacleHealth.currentHealth;
         }
     }
 
@@ -31,7 +32,7 @@ public class PlayerCollision : MonoBehaviour
             Choice choiceScript = other.gameObject.GetComponent<Choice>();
 
             pickUpScript.legosPickedUp += choiceScript.value;
-            upgradeHandler.UpgradeWeapon(choiceScript.value);
+            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }

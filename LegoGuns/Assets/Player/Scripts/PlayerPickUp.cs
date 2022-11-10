@@ -24,7 +24,7 @@ public class PlayerPickUp : MonoBehaviour
     {
         upgradeHandler = GetComponent<PlayerUpgradeHandler>();
 
-        legosPickedUp = 0;
+        legosPickedUp = 1;
     }
 
     private void Update()
@@ -43,6 +43,7 @@ public class PlayerPickUp : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = new Ray(muzzlePoint.position, -muzzlePoint.forward);
+        Debug.DrawRay(muzzlePoint.position, -muzzlePoint.forward, Color.red);
         if (Physics.Raycast(ray, out hit, 5f) && fireCountdown <= 0)
         {
             if (hit.transform.gameObject.CompareTag("Obstacle"))

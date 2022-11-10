@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - Choice
   - Money
+  - ObstacleBeam
+  - PlatformParent
   layers:
   - Default
   - TransparentFX

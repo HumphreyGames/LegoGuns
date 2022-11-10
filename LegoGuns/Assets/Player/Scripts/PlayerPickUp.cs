@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerPickUp : MonoBehaviour
 {
     [Header("References")]
-    private PlayerUpgradeHandler upgradeHandler;
+    private PlayerManager upgradeHandler;
 
     [Header("Data")]
     public int legosPickedUp;
@@ -22,7 +22,7 @@ public class PlayerPickUp : MonoBehaviour
 
     private void Start()
     {
-        upgradeHandler = GetComponent<PlayerUpgradeHandler>();
+        upgradeHandler = GetComponent<PlayerManager>();
 
         legosPickedUp = 1;
     }

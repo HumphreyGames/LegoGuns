@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerUpgradeHandler : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
+    #region UPGRADE SYSTEM
+
+    [Header("Upgrade System")]
     public GameObject[] weapons;
 
     public void UpgradeWeapon(int currentWeapon)
@@ -20,6 +23,25 @@ public class PlayerUpgradeHandler : MonoBehaviour
             }
         }
     }
+
+    #endregion
+
+    #region MONEY SYSTEM
+
+    [Header("Money System")]
+    public int money;
+
+    public void CollectMoney(int value)
+    {
+        money += value;
+    }
+
+    #endregion
+
+    #region END MULTIPLYER SYSTEM
+
+    [Header("End Multiplyer System")]
+    public bool onEndSection;
+
+    #endregion
 }
-
-

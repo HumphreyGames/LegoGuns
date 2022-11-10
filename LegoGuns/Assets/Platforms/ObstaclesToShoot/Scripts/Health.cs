@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
+    [Header("Health Stats")]
     [SerializeField] private int maxHealth = 100;
     public int currentHealth;
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI healthNumberText;
 
     private void Start()
     {
@@ -20,11 +25,14 @@ public class Health : MonoBehaviour
             Die();
         }
 
+        healthNumberText.text = currentHealth.ToString();
+
         GetComponent<Animator>().SetTrigger("Hit");
     }
 
     private void Die()
     {
+        Destroy(healthNumberText.gameObject);
         Destroy(gameObject);
     }
 }

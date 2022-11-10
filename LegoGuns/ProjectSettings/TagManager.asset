@@ -7,6 +7,7 @@ TagManager:
   - Lego
   - Obstacle
   - Choice
+  - Money
   layers:
   - Default
   - TransparentFX

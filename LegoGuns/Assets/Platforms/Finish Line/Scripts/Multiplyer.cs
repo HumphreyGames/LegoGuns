@@ -10,6 +10,8 @@ public class Multiplyer : MonoBehaviour
         {
             FindObjectOfType<PlayerMoveForwards>().enabled = false;
             FindObjectOfType<PlayerPickUp>().enabled = false;
+
+            Camera.main.GetComponent<Animator>().SetTrigger("PlayerDeath");
         }
     }
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    private void Update()
+    {
+        Death();
+    }
+
     #region UPGRADE SYSTEM
 
     [Header("Upgrade System")]
@@ -42,6 +47,19 @@ public class PlayerManager : MonoBehaviour
 
     [Header("End Multiplyer System")]
     public bool onEndSection;
+
+    #endregion
+
+    #region DEATHSYSTEM
+
+    private void Death()
+    {
+        if (GetComponent<PlayerPickUp>().legosPickedUp <= 0)
+        {
+            FindObjectOfType<PlayerMoveForwards>().enabled = false;
+            FindObjectOfType<PlayerPickUp>().enabled = false;
+        }
+    }
 
     #endregion
 }

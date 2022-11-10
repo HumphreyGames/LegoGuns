@@ -10,6 +10,7 @@ TagManager:
   - Money
   - ObstacleBeam
   - PlatformParent
+  - Multiplyer
   layers:
   - Default
   - TransparentFX

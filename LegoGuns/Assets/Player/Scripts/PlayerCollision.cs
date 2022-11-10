@@ -78,5 +78,9 @@ public class PlayerCollision : MonoBehaviour
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
             upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
         }
+        else if (other.gameObject.CompareTag("Multiplyer"))
+        {
+            print("end of level");
+        }
     }
 }

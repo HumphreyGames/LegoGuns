@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 98111029}
   - component: {fileID: 98111028}
   - component: {fileID: 98111027}
+  - component: {fileID: 98111034}
   m_Layer: 3
   m_Name: Obstacle_Shootable (6)
   m_TagString: Obstacle
@@ -1290,6 +1291,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &98111034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98111025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &128187644
 Mesh:
   m_ObjectHideFlags: 0
@@ -1906,6 +1919,7 @@ GameObject:
   - component: {fileID: 189652451}
   - component: {fileID: 189652450}
   - component: {fileID: 189652449}
+  - component: {fileID: 189652456}
   m_Layer: 3
   m_Name: Obstacle_Shootable (8)
   m_TagString: Obstacle
@@ -2593,6 +2607,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &189652456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189652447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &191695586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,6 +3580,7 @@ GameObject:
   - component: {fileID: 284062068}
   - component: {fileID: 284062067}
   - component: {fileID: 284062066}
+  - component: {fileID: 284062073}
   m_Layer: 3
   m_Name: Obstacle_Shootable (20)
   m_TagString: Obstacle
@@ -4241,6 +4268,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &284062073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284062064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284974433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,7 +4308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284974433}
   m_LocalRotation: {x: -0.50000083, y: -0.4999993, z: -0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -21.924}
+  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -22.419}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4371,6 +4410,7 @@ GameObject:
   - component: {fileID: 287824143}
   - component: {fileID: 287824142}
   - component: {fileID: 287824141}
+  - component: {fileID: 287824148}
   m_Layer: 3
   m_Name: Obstacle_Shootable (21)
   m_TagString: Obstacle
@@ -5058,6 +5098,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &287824148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287824139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300218388
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,7 +5935,7 @@ GameObject:
   - component: {fileID: 320223491}
   m_Layer: 0
   m_Name: Parts_01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6532,6 +6584,7 @@ GameObject:
   - component: {fileID: 368174419}
   - component: {fileID: 368174418}
   - component: {fileID: 368174417}
+  - component: {fileID: 368174424}
   m_Layer: 3
   m_Name: Obstacle_Shootable (26)
   m_TagString: Obstacle
@@ -7219,6 +7272,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &368174424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368174415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &386433090
 GameObject:
   m_ObjectHideFlags: 0
@@ -7235,6 +7300,7 @@ GameObject:
   - component: {fileID: 386433094}
   - component: {fileID: 386433093}
   - component: {fileID: 386433092}
+  - component: {fileID: 386433099}
   m_Layer: 3
   m_Name: Obstacle_Shootable (17)
   m_TagString: Obstacle
@@ -7922,6 +7988,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &386433099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386433090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407862217
 GameObject:
   m_ObjectHideFlags: 0
@@ -8315,7 +8393,7 @@ GameObject:
   - component: {fileID: 428993795}
   m_Layer: 0
   m_Name: MuzzlePoint
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8448,6 +8526,7 @@ GameObject:
   - component: {fileID: 445926867}
   - component: {fileID: 445926866}
   - component: {fileID: 445926865}
+  - component: {fileID: 445926872}
   m_Layer: 3
   m_Name: Obstacle_Shootable (27)
   m_TagString: Obstacle
@@ -9135,6 +9214,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &445926872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445926863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447141694
 GameObject:
   m_ObjectHideFlags: 0
@@ -10849,7 +10940,7 @@ GameObject:
   - component: {fileID: 562955619}
   m_Layer: 0
   m_Name: 'Part1 '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11748,7 +11839,7 @@ GameObject:
   - component: {fileID: 670448610}
   m_Layer: 0
   m_Name: 'Part2  '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12011,6 +12102,7 @@ GameObject:
   - component: {fileID: 700728483}
   - component: {fileID: 700728482}
   - component: {fileID: 700728481}
+  - component: {fileID: 700728488}
   m_Layer: 3
   m_Name: Obstacle_Shootable (29)
   m_TagString: Obstacle
@@ -12698,6 +12790,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &700728488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700728479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712778603
 GameObject:
   m_ObjectHideFlags: 0
@@ -14155,7 +14259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857221616}
   m_LocalRotation: {x: -0.50000083, y: -0.4999993, z: -0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: 0.8, y: 0.4995696, z: -21.17}
+  m_LocalPosition: {x: 0.8, y: 0.4995696, z: -21.665}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14257,6 +14361,7 @@ GameObject:
   - component: {fileID: 882934243}
   - component: {fileID: 882934242}
   - component: {fileID: 882934241}
+  - component: {fileID: 882934248}
   m_Layer: 3
   m_Name: Obstacle_Shootable (25)
   m_TagString: Obstacle
@@ -14944,6 +15049,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &882934248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882934239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &890294073
 GameObject:
   m_ObjectHideFlags: 0
@@ -15054,7 +15171,7 @@ GameObject:
   - component: {fileID: 900184686}
   m_Layer: 0
   m_Name: 'Part3 '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15140,6 +15257,7 @@ GameObject:
   - component: {fileID: 904385367}
   - component: {fileID: 904385366}
   - component: {fileID: 904385365}
+  - component: {fileID: 904385372}
   m_Layer: 3
   m_Name: Obstacle_Shootable (11)
   m_TagString: Obstacle
@@ -15827,6 +15945,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &904385372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904385363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &913633948
 GameObject:
   m_ObjectHideFlags: 0
@@ -15843,6 +15973,7 @@ GameObject:
   - component: {fileID: 913633952}
   - component: {fileID: 913633951}
   - component: {fileID: 913633950}
+  - component: {fileID: 913633957}
   m_Layer: 3
   m_Name: Obstacle_Shootable (9)
   m_TagString: Obstacle
@@ -16530,6 +16661,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &913633957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913633948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918341047
 GameObject:
   m_ObjectHideFlags: 0
@@ -16541,7 +16684,7 @@ GameObject:
   - component: {fileID: 918341048}
   m_Layer: 0
   m_Name: Parts_02
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16576,7 +16719,7 @@ GameObject:
   - component: {fileID: 925952157}
   m_Layer: 0
   m_Name: 'Part1  '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16961,6 +17104,7 @@ GameObject:
   - component: {fileID: 991242012}
   - component: {fileID: 991242011}
   - component: {fileID: 991242010}
+  - component: {fileID: 991242017}
   m_Layer: 3
   m_Name: Obstacle_Shootable (16)
   m_TagString: Obstacle
@@ -17648,6 +17792,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &991242017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991242008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &994325126
 GameObject:
   m_ObjectHideFlags: 0
@@ -18033,6 +18189,7 @@ GameObject:
   - component: {fileID: 1019021971}
   - component: {fileID: 1019021970}
   - component: {fileID: 1019021969}
+  - component: {fileID: 1019021976}
   m_Layer: 3
   m_Name: Obstacle_Shootable (14)
   m_TagString: Obstacle
@@ -18720,6 +18877,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1019021976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019021967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1022723691
 GameObject:
   m_ObjectHideFlags: 0
@@ -19050,7 +19219,7 @@ GameObject:
   - component: {fileID: 1061976573}
   m_Layer: 0
   m_Name: 'Part2 '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19438,6 +19607,7 @@ GameObject:
   - component: {fileID: 1090560117}
   - component: {fileID: 1090560116}
   - component: {fileID: 1090560115}
+  - component: {fileID: 1090560122}
   m_Layer: 3
   m_Name: Obstacle_Shootable (24)
   m_TagString: Obstacle
@@ -20125,6 +20295,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1090560122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090560113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090817365
 GameObject:
   m_ObjectHideFlags: 0
@@ -20140,7 +20322,7 @@ GameObject:
   - component: {fileID: 1090817370}
   m_Layer: 0
   m_Name: 'Part3 '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20356,6 +20538,7 @@ GameObject:
   - component: {fileID: 1094932744}
   - component: {fileID: 1094932743}
   - component: {fileID: 1094932742}
+  - component: {fileID: 1094932749}
   m_Layer: 3
   m_Name: Obstacle_Shootable (19)
   m_TagString: Obstacle
@@ -21043,6 +21226,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1094932749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094932740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121375307
 GameObject:
   m_ObjectHideFlags: 0
@@ -21893,7 +22088,7 @@ GameObject:
   - component: {fileID: 1213433084}
   m_Layer: 0
   m_Name: Parts_03
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22068,6 +22263,7 @@ GameObject:
   - component: {fileID: 1230580287}
   - component: {fileID: 1230580286}
   - component: {fileID: 1230580285}
+  - component: {fileID: 1230580292}
   m_Layer: 3
   m_Name: Obstacle_Shootable (5)
   m_TagString: Obstacle
@@ -22755,6 +22951,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1230580292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230580283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1240132479
 Mesh:
   m_ObjectHideFlags: 0
@@ -23083,7 +23291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263047351}
   m_LocalRotation: {x: -0.50000083, y: -0.4999993, z: -0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -20.424}
+  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -20.919}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24271,7 +24479,7 @@ GameObject:
   - component: {fileID: 1406980814}
   m_Layer: 0
   m_Name: 'Part2  '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24526,6 +24734,7 @@ GameObject:
   - component: {fileID: 1421562709}
   - component: {fileID: 1421562708}
   - component: {fileID: 1421562707}
+  - component: {fileID: 1421562714}
   m_Layer: 3
   m_Name: Obstacle_Shootable (30)
   m_TagString: Obstacle
@@ -25213,6 +25422,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1421562714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421562705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1428607302
 Mesh:
   m_ObjectHideFlags: 0
@@ -25938,6 +26159,7 @@ GameObject:
   - component: {fileID: 1513650886}
   - component: {fileID: 1513650885}
   - component: {fileID: 1513650884}
+  - component: {fileID: 1513650891}
   m_Layer: 3
   m_Name: Obstacle_Shootable (31)
   m_TagString: Obstacle
@@ -26625,6 +26847,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1513650891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513650882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1521983691
 GameObject:
   m_ObjectHideFlags: 0
@@ -26641,6 +26875,7 @@ GameObject:
   - component: {fileID: 1521983695}
   - component: {fileID: 1521983694}
   - component: {fileID: 1521983693}
+  - component: {fileID: 1521983700}
   m_Layer: 3
   m_Name: Obstacle_Shootable (13)
   m_TagString: Obstacle
@@ -27328,6 +27563,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1521983700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521983691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1524615337
 GameObject:
   m_ObjectHideFlags: 0
@@ -28208,6 +28455,7 @@ GameObject:
   - component: {fileID: 1590531776}
   - component: {fileID: 1590531775}
   - component: {fileID: 1590531774}
+  - component: {fileID: 1590531781}
   m_Layer: 3
   m_Name: Obstacle_Shootable (28)
   m_TagString: Obstacle
@@ -28895,6 +29143,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1590531781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590531772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595662455
 GameObject:
   m_ObjectHideFlags: 0
@@ -30273,6 +30533,7 @@ GameObject:
   - component: {fileID: 1762963882}
   - component: {fileID: 1762963881}
   - component: {fileID: 1762963880}
+  - component: {fileID: 1762963887}
   m_Layer: 3
   m_Name: Obstacle_Shootable (15)
   m_TagString: Obstacle
@@ -30960,6 +31221,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1762963887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762963878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783768262
 GameObject:
   m_ObjectHideFlags: 0
@@ -31534,6 +31807,7 @@ GameObject:
   - component: {fileID: 1872077026}
   - component: {fileID: 1872077025}
   - component: {fileID: 1872077024}
+  - component: {fileID: 1872077031}
   m_Layer: 3
   m_Name: Obstacle_Shootable (12)
   m_TagString: Obstacle
@@ -32221,6 +32495,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1872077031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872077022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1874082468
 GameObject:
   m_ObjectHideFlags: 0
@@ -32635,6 +32921,7 @@ GameObject:
   - component: {fileID: 1894663944}
   - component: {fileID: 1894663943}
   - component: {fileID: 1894663942}
+  - component: {fileID: 1894663949}
   m_Layer: 3
   m_Name: Obstacle_Shootable (18)
   m_TagString: Obstacle
@@ -33322,6 +33609,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1894663949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894663940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1897820151
 Mesh:
   m_ObjectHideFlags: 0
@@ -34108,6 +34407,7 @@ GameObject:
   - component: {fileID: 1995499923}
   - component: {fileID: 1995499922}
   - component: {fileID: 1995499921}
+  - component: {fileID: 1995499928}
   m_Layer: 3
   m_Name: Obstacle_Shootable (22)
   m_TagString: Obstacle
@@ -34795,6 +35095,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1995499928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995499919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1996876793
 GameObject:
   m_ObjectHideFlags: 0
@@ -35108,7 +35420,7 @@ GameObject:
   - component: {fileID: 2003854588}
   m_Layer: 0
   m_Name: 'Part1   '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36251,6 +36563,7 @@ GameObject:
   - component: {fileID: 2033150720}
   - component: {fileID: 2033150719}
   - component: {fileID: 2033150718}
+  - component: {fileID: 2033150725}
   m_Layer: 3
   m_Name: Obstacle_Shootable (7)
   m_TagString: Obstacle
@@ -36938,6 +37251,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &2033150725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033150716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2052801516
 GameObject:
   m_ObjectHideFlags: 0
@@ -36980,7 +37305,7 @@ GameObject:
   - component: {fileID: 2060903625}
   m_Layer: 0
   m_Name: Parts_04
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37887,6 +38212,7 @@ GameObject:
   - component: {fileID: 2103490411}
   - component: {fileID: 2103490410}
   - component: {fileID: 2103490409}
+  - component: {fileID: 2103490416}
   m_Layer: 3
   m_Name: Obstacle_Shootable (23)
   m_TagString: Obstacle
@@ -38574,6 +38900,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &2103490416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103490407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2107701278
 GameObject:
   m_ObjectHideFlags: 0
@@ -38590,6 +38928,7 @@ GameObject:
   - component: {fileID: 2107701282}
   - component: {fileID: 2107701281}
   - component: {fileID: 2107701280}
+  - component: {fileID: 2107701287}
   m_Layer: 3
   m_Name: Obstacle_Shootable (10)
   m_TagString: Obstacle
@@ -39277,6 +39616,18 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &2107701287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107701278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3e024827740a040b369751670713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &16247449183202840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39489,7 +39840,7 @@ GameObject:
   - component: {fileID: 1814916163}
   m_Layer: 0
   m_Name: Pistol_03
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39508,7 +39859,7 @@ GameObject:
   - component: {fileID: 2015736494}
   m_Layer: 0
   m_Name: Pistol_01
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39527,7 +39878,7 @@ GameObject:
   - component: {fileID: 1310856935}
   m_Layer: 0
   m_Name: Pistol_04
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39546,7 +39897,7 @@ GameObject:
   - component: {fileID: 581242858}
   m_Layer: 0
   m_Name: Pistol_02
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39723,7 +40074,7 @@ GameObject:
   - component: {fileID: 8177606590125703788}
   m_Layer: 0
   m_Name: Part4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40255,7 +40606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475138455539592971}
   m_LocalRotation: {x: -0.50000083, y: -0.4999993, z: -0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: -0.91, y: 0.4995696, z: -22.831}
+  m_LocalPosition: {x: -0.91, y: 0.4995696, z: -23.326}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40270,7 +40621,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475138456456401766}
   m_LocalRotation: {x: -0.50000083, y: -0.4999993, z: -0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -23.924}
+  m_LocalPosition: {x: -0.057, y: 0.4995696, z: -24.419}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40662,8 +41013,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 2, z: 4}
-  m_Center: {x: 0.000000059604645, y: -0.0000000037252903, z: 0.000015169382}
+  m_Size: {x: 4, y: 2, z: 2.0596914}
+  m_Center: {x: 0, y: 0, z: 0.97016954}
 --- !u!1 &8164078559439877920
 GameObject:
   m_ObjectHideFlags: 0
@@ -40678,7 +41029,7 @@ GameObject:
   - component: {fileID: 687642714}
   m_Layer: 0
   m_Name: Part1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

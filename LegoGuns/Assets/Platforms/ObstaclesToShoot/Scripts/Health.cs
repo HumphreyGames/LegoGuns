@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+        healthNumberText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
     public void TakeDamage(int damage)

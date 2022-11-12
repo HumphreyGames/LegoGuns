@@ -18,14 +18,14 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Lego"))
+        if (collision.gameObject.CompareTag("Brick"))
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
 
-            pickUpScript.legosPickedUp++;
-            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
+            pickUpScript.bricksPickedUp++;
+            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
         }
     }
 
@@ -37,8 +37,8 @@ public class PlayerCollision : MonoBehaviour
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
             Choice choiceScript = other.gameObject.GetComponent<Choice>();
 
-            pickUpScript.legosPickedUp += choiceScript.value;
-            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
+            pickUpScript.bricksPickedUp += choiceScript.value;
+            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
         else if (other.gameObject.CompareTag("Money"))
@@ -58,10 +58,10 @@ public class PlayerCollision : MonoBehaviour
 
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
             Health obstacleHealth = other.gameObject.GetComponent<Health>();
-            pickUpScript.legosPickedUp -= obstacleHealth.currentHealth;
+            pickUpScript.bricksPickedUp -= obstacleHealth.currentHealth;
 
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
-            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
+            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
         }
         else if (other.gameObject.CompareTag("ObstacleBeam"))
         {
@@ -73,10 +73,10 @@ public class PlayerCollision : MonoBehaviour
             animator.SetTrigger("Hit");
 
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
-            pickUpScript.legosPickedUp -= 1;
+            pickUpScript.bricksPickedUp -= 1;
 
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
-            upgradeHandler.UpgradeWeapon(pickUpScript.legosPickedUp);
+            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
         }
         else if (other.gameObject.CompareTag("Multiplyer"))
         {

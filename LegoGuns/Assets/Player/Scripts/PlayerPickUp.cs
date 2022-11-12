@@ -9,7 +9,7 @@ public class PlayerPickUp : MonoBehaviour
     private Animator animator;
 
     [Header("Data")]
-    public int legosPickedUp;
+    public int bricksPickedUp;
 
     [Header("Shooting Data")]
     [SerializeField] private Transform muzzlePoint;
@@ -26,14 +26,14 @@ public class PlayerPickUp : MonoBehaviour
         upgradeHandler = GetComponent<PlayerManager>();
         animator = GetComponent<Animator>();
 
-        legosPickedUp = 1;
+        bricksPickedUp = 1;
     }
 
     private void Update()
     {
         CheckForObstacle();
 
-        if (legosPickedUp <= 0)
+        if (bricksPickedUp <= 0)
         {
             //GAME OVER
         }
@@ -44,7 +44,7 @@ public class PlayerPickUp : MonoBehaviour
     private void CheckForObstacle()
     {
         RaycastHit hit;
-        Ray ray = new Ray(muzzlePoint.position, -muzzlePoint.forward);
+        Ray ray = new(muzzlePoint.position, -muzzlePoint.forward);
         Debug.DrawRay(muzzlePoint.position, -muzzlePoint.forward, Color.red);
         if (Physics.Raycast(ray, out hit, 5f) && fireCountdown <= 0)
         {

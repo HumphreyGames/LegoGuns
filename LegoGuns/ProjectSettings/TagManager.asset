@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Lego
   - Obstacle
   - Choice
   - Money
   - ObstacleBeam
   - PlatformParent
   - Multiplyer
+  - Brick
   layers:
   - Default
   - TransparentFX

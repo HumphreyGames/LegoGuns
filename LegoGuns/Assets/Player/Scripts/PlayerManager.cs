@@ -54,7 +54,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Death()
     {
-        if (GetComponent<PlayerPickUp>().legosPickedUp <= 0)
+        if (GetComponent<PlayerPickUp>().bricksPickedUp <= 0)
         {
             FindObjectOfType<PlayerMoveForwards>().enabled = false;
             FindObjectOfType<PlayerPickUp>().enabled = false;

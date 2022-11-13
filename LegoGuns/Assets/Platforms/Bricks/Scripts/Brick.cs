@@ -6,6 +6,7 @@ public class Brick : MonoBehaviour
 {
     [Header("Positions")]
     [SerializeField] private Transform[] positions;
+    [SerializeField] private Transform newPartSpawnPoint;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,72 +17,28 @@ public class Brick : MonoBehaviour
 
             if (pickUp.bricksPickedUp == 2)
             {
-                GetComponent<MeshFilter>().mesh = positions[0].gameObject.GetComponent<MeshFilter>().mesh;
-
-                Vector3 firstPositionToMoveTo = new(transform.position.x, transform.position.y + 1f, transform.position.z);
-
-                StartCoroutine(LerpFirstPosition(firstPositionToMoveTo, 0.25f, positions[0].position, positions[0]));
-                StartCoroutine(LerpRotation(positions[0].rotation, 0.25f));
+                GameObject newPart = Instantiate(positions[0].gameObject, newPartSpawnPoint.position, Quaternion.identity);
+                Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
+                newPart.transform.parent = newPartParent;
             }
             else if (pickUp.bricksPickedUp == 3)
             {
-                GetComponent<MeshFilter>().mesh = positions[1].gameObject.GetComponent<MeshFilter>().mesh;
-
-                Vector3 firstPositionToMoveTo = new(transform.position.x, transform.position.y + 1f, transform.position.z);
-
-                StartCoroutine(LerpFirstPosition(firstPositionToMoveTo, 0.25f, positions[1].position, positions[1]));
-                StartCoroutine(LerpRotation(positions[1].rotation, 0.25f));
+                GameObject newPart = Instantiate(positions[1].gameObject, newPartSpawnPoint.position, Quaternion.identity);
+                Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
+                newPart.transform.parent = newPartParent;
             }
             else if (pickUp.bricksPickedUp == 4)
             {
-                GetComponent<MeshFilter>().mesh = positions[2].gameObject.GetComponent<MeshFilter>().mesh;
+                GameObject newPart = Instantiate(positions[2].gameObject, newPartSpawnPoint.position, Quaternion.identity);
+                Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
+                newPart.transform.parent = newPartParent;
             }
             else if (pickUp.bricksPickedUp == 5)
             {
-                GetComponent<MeshFilter>().mesh = positions[3].gameObject.GetComponent<MeshFilter>().mesh;
+                GameObject newPart = Instantiate(positions[3].gameObject, newPartSpawnPoint.position, Quaternion.identity);
+                Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
+                newPart.transform.parent = newPartParent;
             }
         }
-    }
-
-    IEnumerator LerpFirstPosition(Vector3 targetPosition, float duration, Vector3 secondTargetPosition, Transform parent)
-    {
-        float time = 0;
-        Vector3 startPosition = transform.position;
-        while (time < duration)
-        {
-            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        transform.position = targetPosition;
-
-        StartCoroutine(LerpSecondPosition(secondTargetPosition, 0.25f, parent));
-    }
-
-    IEnumerator LerpSecondPosition(Vector3 targetPosition, float duration, Transform parent)
-    {
-        float time = 0;
-        Vector3 startPosition = transform.position;
-        while (time < duration)
-        {
-            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        transform.position = targetPosition;
-        transform.parent = parent;
-    }
-
-    IEnumerator LerpRotation(Quaternion targetRotation, float duration)
-    {
-        float time = 0;
-        Quaternion startValue = transform.rotation;
-        while (time < duration)
-        {
-            transform.rotation = Quaternion.Lerp(startValue, targetRotation, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        transform.rotation = targetRotation;
     }
 }

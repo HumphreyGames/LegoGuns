@@ -6,10 +6,15 @@ public class PlayerNewPart : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform targetPosition;
+    [SerializeField] private Animator animator;
+
+    [Header("Data")]
     public string targetPositionName;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
+
         transform.localScale = new(1f, 1f, 1f);
         targetPosition = GameObject.Find(targetPositionName).transform;
         targetPosition.GetComponent<BoxCollider>().enabled = false;
@@ -29,6 +34,8 @@ public class PlayerNewPart : MonoBehaviour
             yield return null;
         }
         transform.position = targetPosition.position;
+
+        StartCoroutine(LerpScaleUp(new(2f, 2f, 2f), 0.2f));
     }
 
     IEnumerator LerpRotation(Quaternion targetRotation, float duration)
@@ -42,5 +49,33 @@ public class PlayerNewPart : MonoBehaviour
             yield return null;
         }
         transform.rotation = targetRotation;
+    }
+
+    IEnumerator LerpScaleUp(Vector3 targetScale, float duration)
+    {
+        float time = 0;
+        Vector3 startValue = transform.localScale;
+        while (time < duration)
+        {
+            transform.localScale = Vector3.Lerp(startValue, targetScale, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.localScale = targetScale;
+
+        StartCoroutine(LerpScaleDown(new(1f, 1f, 1f), 0.2f));
+    }
+
+    IEnumerator LerpScaleDown(Vector3 targetScale, float duration)
+    {
+        float time = 0;
+        Vector3 startValue = transform.localScale;
+        while (time < duration)
+        {
+            transform.localScale = Vector3.Lerp(startValue, targetScale, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.localScale = targetScale;
     }
 }

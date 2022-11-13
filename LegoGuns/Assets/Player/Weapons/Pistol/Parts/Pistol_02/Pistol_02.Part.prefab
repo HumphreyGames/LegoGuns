@@ -112,4 +112,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 0}
+  animator: {fileID: 0}
   targetPositionName: Pistol_02.TargetPos

@@ -16,6 +16,8 @@ public class Brick : MonoBehaviour
 
             if (pickUp.bricksPickedUp == 2)
             {
+                GetComponent<MeshFilter>().mesh = positions[0].gameObject.GetComponent<MeshFilter>().mesh;
+
                 Vector3 firstPositionToMoveTo = new(transform.position.x, transform.position.y + 1f, transform.position.z);
 
                 StartCoroutine(LerpFirstPosition(firstPositionToMoveTo, 0.25f, positions[0].position, positions[0]));
@@ -23,7 +25,7 @@ public class Brick : MonoBehaviour
             }
             else if (pickUp.bricksPickedUp == 3)
             {
-                GetComponent<MeshRenderer>().material.color = Color.red;
+                GetComponent<MeshFilter>().mesh = positions[1].gameObject.GetComponent<MeshFilter>().mesh;
 
                 Vector3 firstPositionToMoveTo = new(transform.position.x, transform.position.y + 1f, transform.position.z);
 
@@ -32,11 +34,11 @@ public class Brick : MonoBehaviour
             }
             else if (pickUp.bricksPickedUp == 4)
             {
-                print("pistol_03");
+                GetComponent<MeshFilter>().mesh = positions[2].gameObject.GetComponent<MeshFilter>().mesh;
             }
             else if (pickUp.bricksPickedUp == 5)
             {
-                print("pistol_04");
+                GetComponent<MeshFilter>().mesh = positions[3].gameObject.GetComponent<MeshFilter>().mesh;
             }
         }
     }

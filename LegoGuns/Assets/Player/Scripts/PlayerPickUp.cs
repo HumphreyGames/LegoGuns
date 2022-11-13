@@ -6,7 +6,6 @@ public class PlayerPickUp : MonoBehaviour
 {
     [Header("References")]
     private PlayerManager upgradeHandler;
-    private Animator animator;
 
     [Header("Data")]
     public int bricksPickedUp;
@@ -24,7 +23,6 @@ public class PlayerPickUp : MonoBehaviour
     private void Start()
     {
         upgradeHandler = GetComponent<PlayerManager>();
-        animator = GetComponent<Animator>();
 
         bricksPickedUp = 1;
     }
@@ -59,8 +57,6 @@ public class PlayerPickUp : MonoBehaviour
 
     void Shoot()
     {
-        animator.SetTrigger("Shoot");
-
         GameObject bullet = Instantiate(bulletObj, muzzlePoint.position, Quaternion.identity) as GameObject;
         bullet.GetComponent<Rigidbody>().AddForce(-muzzlePoint.forward * shootForce);
     }

@@ -54,8 +54,6 @@ public class PlayerCollision : MonoBehaviour
 
             Destroy(other.gameObject);
 
-            animator.SetTrigger("Hit");
-
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
             Health obstacleHealth = other.gameObject.GetComponent<Health>();
             pickUpScript.bricksPickedUp -= obstacleHealth.currentHealth;
@@ -69,8 +67,6 @@ public class PlayerCollision : MonoBehaviour
 
             GameObject destroyFX = Instantiate(obstacle_Beam_DeathFX, other.transform.position, Quaternion.identity);
             destroyFX.transform.parent = GameObject.FindGameObjectWithTag("PlatformParent").transform;
-
-            animator.SetTrigger("Hit");
 
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
             pickUpScript.bricksPickedUp -= 1;

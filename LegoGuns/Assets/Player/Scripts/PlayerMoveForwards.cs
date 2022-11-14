@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerMoveForwards : MonoBehaviour
 {
+    [HideInInspector] public bool startMoving;
     [SerializeField] private float speed = 1f;
 
     private void Update()
     {
-        transform.position += transform.forward * (-speed * Time.deltaTime);
+        if (startMoving)
+            transform.position += transform.forward * (-speed * Time.deltaTime);
     }
 }

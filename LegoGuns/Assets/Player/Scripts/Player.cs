@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -46,7 +47,6 @@ public class Player : MonoBehaviour
         {
             _anchorPosition = Input.mousePosition;
         }
-
         else if (Input.GetMouseButton(0))
         {
             inputX = (Input.mousePosition.x - _anchorPosition.x);

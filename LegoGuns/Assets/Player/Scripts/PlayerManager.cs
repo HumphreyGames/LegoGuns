@@ -58,6 +58,7 @@ public class PlayerManager : MonoBehaviour
         {
             FindObjectOfType<PlayerMoveForwards>().enabled = false;
             FindObjectOfType<PlayerPickUp>().enabled = false;
+            FindObjectOfType<Camera>().GetComponent<Animator>().SetTrigger("PlayerDeath");
         }
     }
 

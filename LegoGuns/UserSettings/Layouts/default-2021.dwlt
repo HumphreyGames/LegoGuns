@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 81
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 95
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -167,15 +167,15 @@ MonoBehaviour:
     height: 628
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 15}
   - {fileID: 14}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 11}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 4
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,7 +203,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 1034
+    width: 955
     height: 607
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -358,10 +358,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 9747a22026f677d4f95b6290ba7e495b,
+  m_AnimatorController: {fileID: 9100000, guid: 806f037613b8bd649a9f35b452a9ce64,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -402069308459280713, guid: 9747a22026f677d4f95b6290ba7e495b,
+  - m_Target: {fileID: 5637748563760189189, guid: 806f037613b8bd649a9f35b452a9ce64,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -398,7 +398,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 701
-    width: 1034
+    width: 955
     height: 290
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -406,7 +406,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 27848
+  m_LastSelectedObjectID: -339594
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -496,7 +496,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
       y: 21
       width: 955
       height: 586
-    m_Scale: {x: 0.31614584, y: 0.31614584}
+    m_Scale: {x: 0.30520833, y: 0.30520833}
     m_Translation: {x: 477.5, y: 293}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -517,12 +517,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1510.3789
-      y: -926.7875
-      width: 3020.7578
-      height: 1853.575
+      x: -1564.5051
+      y: -960
+      width: 3129.0103
+      height: 1920
     m_MinimalGUI: 1
-  m_defaultScale: 0.31614584
+  m_defaultScale: 0.30520833
   m_LastWindowPixelSize: {x: 955, y: 607}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -779,18 +779,18 @@ MonoBehaviour:
       index: 12
       layout: 4
   m_WindowGUID: 58e1e004c1e33ec4f9cf6cab2c41c3d0
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 755.5673, y: 1770.6163, z: 0.56799304}
+    m_Target: {x: -0.058909897, y: -0.18754658, z: -0.33295095}
     speed: 2
-    m_Value: {x: 1.3369781, y: 0.51290935, z: -0.13995004}
+    m_Value: {x: -0.058909897, y: -0.18754658, z: -0.33295095}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -837,20 +837,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.042699486, y: 0.7725515, z: -0.05221357, w: 0.6313959}
     speed: 2
-    m_Value: {x: -0.000000008297362, y: 0.00000004924864, z: 0.000000009186718, w: 1}
+    m_Value: {x: 0.042698503, y: 0.7725337, z: -0.05221237, w: 0.63138133}
   m_Size:
-    m_Target: 290.7745
+    m_Target: 0.0030326368
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 0.0030326368
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.34829998
-    m_SpeedNormalized: 0.16999999
+    m_Speed: 0.01
+    m_SpeedNormalized: 0
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -861,7 +861,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 0
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.12296905, y: 0.72987765, z: 0.13614954, w: 0.65854853}
+  m_LastSceneViewRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -995,22 +995,28 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Player/Weapons
+    - Assets/Player/Weapons/Pistol/Parts/Pistol_01
+    - Assets/Player/Weapons/Pistol/Parts/Pistol_02
+    - Assets/Player/Weapons/Pistol/Parts/Pistol_03
+    - Assets/Player/Weapons/Pistol/Parts/Pistol_04
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Player/Weapons
+  - Assets/Player/Weapons/Pistol/Parts/Pistol_01
+  - Assets/Player/Weapons/Pistol/Parts/Pistol_02
+  - Assets/Player/Weapons/Pistol/Parts/Pistol_03
+  - Assets/Player/Weapons/Pistol/Parts/Pistol_04
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\GitHub\LegoGuns\LegoGuns
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 64760000
-    m_LastClickedID: 30308
-    m_ExpandedIDs: 0000000032760000347600003a7600003c7600003e7600004676000000ca9a3b
+    scrollPos: {x: 0, y: 70.60274}
+    m_SelectedIDs: 50760000527600005476000056760000
+    m_LastClickedID: 30294
+    m_ExpandedIDs: 00000000127600001476000016760000187600001a7600001c760000327600003c7600004c76000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1038,7 +1044,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000327600003476000036760000387600003a7600003c7600003e760000
+    m_ExpandedIDs: 00000000127600001476000016760000187600001a7600001c760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1065,7 +1071,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000e26e0000de5cfaff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1126,9 +1132,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 3a810100548801006a8f0100868f0100
       m_LastClickedID: 0
-      m_ExpandedIDs: 12fbffff
+      m_ExpandedIDs: 903dfeff02a6feff2055ffff12fbffff2c6d00000e6e00008a7000002c710000c8710000e0720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1184,7 +1190,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: -446
+    m_CachedPref: 210
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1

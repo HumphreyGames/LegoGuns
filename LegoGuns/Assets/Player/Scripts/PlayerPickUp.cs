@@ -30,11 +30,6 @@ public class PlayerPickUp : MonoBehaviour
     private void Update()
     {
         CheckForObstacle();
-
-        if (bricksPickedUp <= 0)
-        {
-            //GAME OVER
-        }
     }
 
     #region Obstacle Detection + Shooting

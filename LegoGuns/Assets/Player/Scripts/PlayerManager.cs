@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
     private void Start()
     {
         Cursor.visible = false;
+        moneyCountText = GameObject.FindGameObjectWithTag("MoneyText").GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
@@ -39,11 +41,13 @@ public class PlayerManager : MonoBehaviour
     #region MONEY SYSTEM
 
     [Header("Money System")]
-    public int money;
+    [SerializeField] private TextMeshProUGUI moneyCountText;
+    public int currentMoney;
 
     public void CollectMoney(int value)
     {
-        money += value;
+        currentMoney += value;
+        moneyCountText.text = "$" + currentMoney.ToString();
     }
 
     #endregion

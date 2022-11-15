@@ -12,6 +12,7 @@ TagManager:
   - Multiplyer
   - Brick
   - DragToPlay
+  - MoneyText
   layers:
   - Default
   - TransparentFX

@@ -45,12 +45,12 @@ public class Player : MonoBehaviour
         var inputX = 0f;
         if (Input.GetMouseButtonDown(0))
         {
-            _anchorPosition = Input.mousePosition;
+            _anchorPosition = -Input.mousePosition;
         }
         else if (Input.GetMouseButton(0))
         {
-            inputX = (Input.mousePosition.x - _anchorPosition.x);
-            _anchorPosition = Input.mousePosition;
+            inputX = (-Input.mousePosition.x - _anchorPosition.x);
+            _anchorPosition = -Input.mousePosition;
         }
         return inputX;
     }

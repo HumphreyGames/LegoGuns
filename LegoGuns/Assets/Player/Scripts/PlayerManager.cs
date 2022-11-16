@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     {
         Cursor.visible = false;
         moneyCountText = GameObject.FindGameObjectWithTag("MoneyText").GetComponent<TextMeshProUGUI>();
+
+        UpgradeWeapon(startingWeaponUpgrade);
     }
 
     private void Update()
@@ -19,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     #region UPGRADE SYSTEM
 
     [Header("Upgrade System")]
+    public int startingWeaponUpgrade = 1;
     public GameObject[] weapons;
 
     public void UpgradeWeapon(int currentWeapon)

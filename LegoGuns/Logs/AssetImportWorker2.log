@@ -801,3 +801,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12318.291480 seconds.
+  path: Assets/UI/Elements/Upgrades
+  artifactKey: Guid(0a7bdb14f77750e40ae2447e8d62992b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Elements/Upgrades using Guid(0a7bdb14f77750e40ae2447e8d62992b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09df41a252514ae8319fed4943d49d5e') in 0.011916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.031655 seconds.
+  path: Assets/UI/Elements/Upgrades/upgradesUIBanner.png
+  artifactKey: Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Elements/Upgrades/upgradesUIBanner.png using Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef4570ef0a8846365dbf2afc9d707f0') in 0.110893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.411844 seconds.
+  path: Assets/UI/Elements/Upgrades/upgradesUIBanner.png
+  artifactKey: Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Elements/Upgrades/upgradesUIBanner.png using Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e17675e3660d2303f53f50672e6a6cb') in 0.019551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.702138 seconds.
+  path: Assets/UI/Elements/Upgrades/upgradesUIBanner.png
+  artifactKey: Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Elements/Upgrades/upgradesUIBanner.png using Guid(3eb63b66f43e8ed4aa53f4dee5d2037c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40357ef747cd4f447ad8b71af5026b1') in 0.055206 seconds 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,9 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     [Header("References")]
+    [SerializeField] private Transform muzzlePoint;
+
+    [Header("Components")]
     private Animator animator;
 
     [Header("Destory Effects")]
@@ -16,17 +20,29 @@ public class PlayerCollision : MonoBehaviour
         animator = GetComponentInParent<Animator>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        if (collision.gameObject.CompareTag("Brick"))
+        DetectAlien();
+    }
+
+    private void DetectAlien()
+    {
+        RaycastHit hit;
+        Ray ray = new(muzzlePoint.position, -muzzlePoint.forward);
+        if (Physics.Raycast(ray, out hit, 0.5f))
         {
-            Destroy(collision.gameObject);
+            if (hit.transform.gameObject.CompareTag("Alien"))
+            {
+                hit.transform.gameObject.GetComponent<CapsuleCollider>().enabled = false;
 
-            PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
-            PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
+                PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
+                Animator alienAnim = hit.transform.gameObject.GetComponent<Animator>();
+                Animator playerAnim = gameObject.GetComponent<Animator>();
 
-            pickUpScript.bricksPickedUp++;
-            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
+                pickUpScript.aliensPickedUp++;
+                alienAnim.SetTrigger("Upgrade_" + pickUpScript.aliensPickedUp);
+                playerAnim.SetTrigger("Upgrade_" + pickUpScript.aliensPickedUp);
+            }
         }
     }
 
@@ -38,8 +54,8 @@ public class PlayerCollision : MonoBehaviour
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
             Choice choiceScript = other.gameObject.GetComponent<Choice>();
 
-            pickUpScript.bricksPickedUp += choiceScript.value;
-            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
+            pickUpScript.aliensPickedUp += choiceScript.value;
+            upgradeHandler.UpgradeWeapon(pickUpScript.aliensPickedUp);
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
         else if (other.gameObject.CompareTag("Money"))
@@ -57,10 +73,10 @@ public class PlayerCollision : MonoBehaviour
 
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
             Health obstacleHealth = other.gameObject.GetComponent<Health>();
-            pickUpScript.bricksPickedUp -= obstacleHealth.currentHealth;
+            pickUpScript.aliensPickedUp -= obstacleHealth.currentHealth;
 
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
-            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
+            upgradeHandler.UpgradeWeapon(pickUpScript.aliensPickedUp);
         }
         else if (other.gameObject.CompareTag("ObstacleBeam"))
         {
@@ -70,10 +86,10 @@ public class PlayerCollision : MonoBehaviour
             destroyFX.transform.parent = GameObject.FindGameObjectWithTag("PlatformParent").transform;
 
             PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
-            pickUpScript.bricksPickedUp -= 1;
+            pickUpScript.aliensPickedUp -= 1;
 
             PlayerManager upgradeHandler = FindObjectOfType<PlayerManager>();
-            upgradeHandler.UpgradeWeapon(pickUpScript.bricksPickedUp);
+            upgradeHandler.UpgradeWeapon(pickUpScript.aliensPickedUp);
         }
         else if (other.gameObject.CompareTag("Multiplyer"))
         {

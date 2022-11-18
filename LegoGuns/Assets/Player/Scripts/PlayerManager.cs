@@ -9,15 +9,13 @@ public class PlayerManager : MonoBehaviour
     {
         Cursor.visible = false;
         moneyCountText = GameObject.FindGameObjectWithTag("MoneyText").GetComponent<TextMeshProUGUI>();
-
-        UpgradeWeapon(startingWeaponUpgrade);
     }
 
     private void Update()
     {
         Death();
     }
-
+    
     #region UPGRADE SYSTEM
 
     [Header("Upgrade System")]
@@ -66,7 +64,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Death()
     {
-        if (GetComponent<PlayerPickUp>().bricksPickedUp <= 0)
+        if (GetComponent<PlayerPickUp>().aliensPickedUp <= 0)
         {
             FindObjectOfType<PlayerMoveForwards>().enabled = false;
             FindObjectOfType<PlayerPickUp>().enabled = false;

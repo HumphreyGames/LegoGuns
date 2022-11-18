@@ -8,7 +8,7 @@ public class PlayerPickUp : MonoBehaviour
     private PlayerManager upgradeHandler;
 
     [Header("Data")]
-    public int bricksPickedUp;
+    public int aliensPickedUp;
 
     [Header("Shooting Data")]
     [SerializeField] private Transform muzzlePoint;
@@ -24,7 +24,7 @@ public class PlayerPickUp : MonoBehaviour
     {
         upgradeHandler = GetComponent<PlayerManager>();
 
-        bricksPickedUp = 1;
+        aliensPickedUp = 1;
     }
 
     private void Update()

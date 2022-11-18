@@ -8,6 +8,7 @@ public class DragToPlayUI : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Animator>().SetBool("Run", true);
             FindObjectOfType<PlayerMoveForwards>().startMoving = true;
             Camera.main.GetComponent<Animator>().SetTrigger("DuringLevel");
             gameObject.transform.parent.gameObject.SetActive(false);

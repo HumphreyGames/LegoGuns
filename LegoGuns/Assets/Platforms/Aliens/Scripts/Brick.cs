@@ -15,25 +15,25 @@ public class Brick : MonoBehaviour
             PlayerPickUp pickUp = FindObjectOfType<PlayerPickUp>();
             GetComponent<BoxCollider>().enabled = false;
 
-            if (pickUp.bricksPickedUp == 2)
+            if (pickUp.aliensPickedUp == 2)
             {
                 GameObject newPart = Instantiate(positions[0].gameObject, newPartSpawnPoint.position, Quaternion.identity);
                 Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
                 newPart.transform.parent = newPartParent;
             }
-            else if (pickUp.bricksPickedUp == 3)
+            else if (pickUp.aliensPickedUp == 3)
             {
                 GameObject newPart = Instantiate(positions[1].gameObject, newPartSpawnPoint.position, Quaternion.identity);
                 Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
                 newPart.transform.parent = newPartParent;
             }
-            else if (pickUp.bricksPickedUp == 4)
+            else if (pickUp.aliensPickedUp == 4)
             {
                 GameObject newPart = Instantiate(positions[2].gameObject, newPartSpawnPoint.position, Quaternion.identity);
                 Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;
                 newPart.transform.parent = newPartParent;
             }
-            else if (pickUp.bricksPickedUp == 5)
+            else if (pickUp.aliensPickedUp == 5)
             {
                 GameObject newPart = Instantiate(positions[3].gameObject, newPartSpawnPoint.position, Quaternion.identity);
                 Transform newPartParent = GameObject.Find(newPart.GetComponent<PlayerNewPart>().targetPositionName).transform;

@@ -10,9 +10,9 @@ TagManager:
   - ObstacleBeam
   - PlatformParent
   - Multiplyer
-  - Brick
   - DragToPlay
   - MoneyText
+  - Alien
   layers:
   - Default
   - TransparentFX

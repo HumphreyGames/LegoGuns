@@ -13,6 +13,7 @@ TagManager:
   - DragToPlay
   - MoneyText
   - Alien
+  - Test
   layers:
   - Default
   - TransparentFX

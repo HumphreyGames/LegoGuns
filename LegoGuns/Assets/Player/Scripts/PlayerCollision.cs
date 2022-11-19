@@ -33,15 +33,9 @@ public class PlayerCollision : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Alien"))
             {
-                hit.transform.gameObject.GetComponent<CapsuleCollider>().enabled = false;
-
-                PlayerPickUp pickUpScript = FindObjectOfType<PlayerPickUp>();
-                Animator alienAnim = hit.transform.gameObject.GetComponent<Animator>();
-                Animator playerAnim = gameObject.GetComponent<Animator>();
-
-                pickUpScript.aliensPickedUp++;
-                alienAnim.SetTrigger("Upgrade_" + pickUpScript.aliensPickedUp);
-                playerAnim.SetTrigger("Upgrade_" + pickUpScript.aliensPickedUp);
+                GetComponentInParent<PlayerPickUp>().aliensPickedUp++;
+                hit.transform.gameObject.GetComponent<Alien>().StartUpgrade();
+                animator.SetTrigger("Upgrade_" + GetComponentInParent<PlayerPickUp>().aliensPickedUp.ToString());
             }
         }
     }

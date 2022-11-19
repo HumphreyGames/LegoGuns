@@ -45,6 +45,21 @@ public class PlayerCollision : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.gameObject.CompareTag("Alien") && GetComponentInParent<PlayerPickUp>().aliensPickedUp == 1)
+        {
+            GetComponentInParent<PlayerPickUp>().aliensPickedUp++;
+            collision.transform.gameObject.GetComponent<Alien>().StartUpgrade();
+            animator.SetTrigger("Upgrade_" + GetComponentInParent<PlayerPickUp>().aliensPickedUp.ToString());
+        }
+        else if (collision.transform.gameObject.CompareTag("Alien") && GetComponentInParent<PlayerPickUp>().aliensPickedUp >= 2)
+        {
+            GetComponentInParent<PlayerPickUp>().aliensPickedUp++;
+            collision.transform.gameObject.GetComponent<Alien>().StartUpgrade();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Choice"))

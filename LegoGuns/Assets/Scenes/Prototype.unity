@@ -15580,6 +15580,10 @@ MonoBehaviour:
   - {fileID: 1693297051}
   - {fileID: 16778606}
   - {fileID: 325621739}
+  upgradesColours:
+  - Black
+  - Red
+  - Red
 --- !u!1 &857221616
 GameObject:
   m_ObjectHideFlags: 0
@@ -23510,6 +23514,10 @@ MonoBehaviour:
   - {fileID: 1693297051}
   - {fileID: 16778606}
   - {fileID: 325621739}
+  upgradesColours:
+  - Black
+  - Red
+  - Red
 --- !u!136 &1153287115
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28318,6 +28326,10 @@ MonoBehaviour:
   - {fileID: 1693297051}
   - {fileID: 16778606}
   - {fileID: 325621739}
+  upgradesColours:
+  - Black
+  - Red
+  - Red
 --- !u!136 &1512329358
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public static class ColorExtensions
+{
+    public static Color ToColor(this string color)
+    {
+        return (Color)typeof(Color).GetProperty(color.ToLowerInvariant()).GetValue(null, null);
+    }
+}
+
 public class Alien : MonoBehaviour
 {
     [Header("Data")]
@@ -10,6 +18,7 @@ public class Alien : MonoBehaviour
     [Space(20)]
     [SerializeField] private GameObject[] upgrades;
     [SerializeField] private GameObject[] upgradePoints;
+    [SerializeField] private string[] upgradesColours;
 
     public void StartUpgrade()
     {
@@ -30,6 +39,8 @@ public class Alien : MonoBehaviour
         GameObject alien = Instantiate(upgrades[pickUpScript.aliensPickedUp - 2], upgradePoints[pickUpScript.aliensPickedUp - 2].transform.position, upgradePoints[pickUpScript.aliensPickedUp - 2].transform.rotation);
 
         alien.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SkinnedMeshRenderer>().material.color = Color.black;
+        alien.GetComponentInChildren<SkinnedMeshRenderer>().material.color = upgradesColours[pickUpScript.aliensPickedUp - 2].ToColor();
 
         Destroy(gameObject);
     }

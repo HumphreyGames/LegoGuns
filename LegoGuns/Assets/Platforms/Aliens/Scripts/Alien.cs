@@ -4,32 +4,59 @@ using UnityEngine;
 
 public class Alien : MonoBehaviour
 {
-    [Header("Components")]
-    private Animator animator;
-
     [Header("Data")]
     [SerializeField] private float amountToLerpUp;
 
     [Space(20)]
     [SerializeField] private GameObject[] upgrades;
-
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    [SerializeField] private GameObject[] upgradePoints;
 
     public void StartUpgrade()
     {
         gameObject.GetComponent<CapsuleCollider>().enabled = false;
         PlayerPickUp pickUpScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPickUp>();
-        animator.SetTrigger("Upgrade_" + pickUpScript.aliensPickedUp);
+
+        StartCoroutine(LerpPosition(upgradePoints[pickUpScript.aliensPickedUp - 2].transform.position, 0.4f));
+        StartCoroutine(LerpRotation(upgradePoints[pickUpScript.aliensPickedUp - 2].transform.rotation, 0.4f));
+        StartCoroutine(InstantiateNewUpgrade());
     }
 
-    private void InstantiateUpgrade()
+    IEnumerator InstantiateNewUpgrade()
     {
+        yield return new WaitForSeconds(0.4f);
+
         PlayerPickUp pickUpScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPickUp>();
-        GameObject alien = Instantiate(upgrades[pickUpScript.aliensPickedUp - 2], transform.position, transform.rotation);
+
+        GameObject alien = Instantiate(upgrades[pickUpScript.aliensPickedUp - 2], upgradePoints[pickUpScript.aliensPickedUp - 2].transform.position, upgradePoints[pickUpScript.aliensPickedUp - 2].transform.rotation);
+
         alien.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+
         Destroy(gameObject);
+    }
+
+    IEnumerator LerpPosition(Vector3 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+    }
+
+    IEnumerator LerpRotation(Quaternion endValue, float duration)
+    {
+        float time = 0;
+        Quaternion startValue = transform.rotation;
+        while (time < duration)
+        {
+            transform.rotation = Quaternion.Lerp(startValue, endValue, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = endValue;
     }
 }

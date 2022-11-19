@@ -31,11 +31,16 @@ public class PlayerCollision : MonoBehaviour
         Ray ray = new(muzzlePoint.position, -muzzlePoint.forward);
         if (Physics.Raycast(ray, out hit, 0.5f))
         {
-            if (hit.transform.gameObject.CompareTag("Alien"))
+            if (hit.transform.gameObject.CompareTag("Alien") && GetComponentInParent<PlayerPickUp>().aliensPickedUp == 1)
             {
                 GetComponentInParent<PlayerPickUp>().aliensPickedUp++;
                 hit.transform.gameObject.GetComponent<Alien>().StartUpgrade();
                 animator.SetTrigger("Upgrade_" + GetComponentInParent<PlayerPickUp>().aliensPickedUp.ToString());
+            }
+            else if (hit.transform.gameObject.CompareTag("Alien") && GetComponentInParent<PlayerPickUp>().aliensPickedUp >= 2)
+            {
+                GetComponentInParent<PlayerPickUp>().aliensPickedUp++;
+                hit.transform.gameObject.GetComponent<Alien>().StartUpgrade();
             }
         }
     }

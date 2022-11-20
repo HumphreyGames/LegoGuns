@@ -46,10 +46,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f55d7b96181b540875b9b9371ff319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newGunType: 0
+  smgPoint: {fileID: 0}
+  smgPart: {fileID: 301772110945452632, guid: 83b6fdfd4a722eb48b93760face065af, type: 3}
   shotgunPoint: {fileID: 0}
   shotgunPart: {fileID: 301772110945452632, guid: 83b6fdfd4a722eb48b93760face065af,
     type: 3}
   newColour: {r: 0, g: 0, b: 0, a: 1}
+  hasSMGPoints: 1
+  hasShotgunPoints: 1
 --- !u!1 &573212174473224451
 GameObject:
   m_ObjectHideFlags: 0
